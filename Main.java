@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
-// Main class serving as the entry point for the password generator application
 public class Main {
 
-    // Scanner to handle user input
+    // Scanner to read input from the user
     public static final Scanner keyboard = new Scanner(System.in);
 
-     // Main method to start the application
     public static void main(String[] args) {
+    // Create an instance of the Generator class with the Scanner
         Generator generator = new Generator(keyboard);
         generator.mainLoop();
         keyboard.close();
